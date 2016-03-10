@@ -1,0 +1,54 @@
+.container {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin-left: 0;
+	margin-right: 0;
+    clear: both;
+}
+
+.puzzle-container {
+  margin:1em auto;
+}
+
+.puzzle-cell-input {
+    height: 45px;
+    width: 45px;
+    line-height: 0.9em;
+    text-align: center;
+    font-size: 1.5em;
+    border-left: none;
+    border-right: none;
+}
+
+.puzzle-cell-input:hover {
+    text-decoration: none; !important
+}
+.puzzle-cell {
+    height:45px;
+    width:45px;
+    border:1px solid;
+    text-align:center;
+}
+
+.puzzle-cell:first-child {
+  border-left:solid;
+}
+
+.puzzle-cell:nth-child(3n) {
+  border-right:solid ;
+}
+.puzzle-row:first-child {
+  border-top:solid;
+}
+.puzzle-row:nth-child(3n) .puzzle-cell {
+  border-bottom:solid ;
+}
+
+.empty {
+    color: red;
+}
+
+.filled {
+    color: black;
+}
